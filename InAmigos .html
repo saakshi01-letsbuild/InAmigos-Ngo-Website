@@ -1,0 +1,758 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>InAmigos Foundation</title><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"><style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b1020;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:500px;
+height:500px;
+background:#00ff9d20;
+filter:blur(120px);
+top:-150px;
+left:-100px;
+z-index:-1;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:400px;
+height:400px;
+background:#00c3ff20;
+filter:blur(120px);
+bottom:-100px;
+right:-100px;
+z-index:-1;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+border-bottom:1px solid rgba(255,255,255,0.1);
+z-index:1000;
+}
+
+.logo{
+font-size:1.6rem;
+font-weight:700;
+color:#00ff9d;
+}
+
+.nav-links{
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#00ff9d;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:0 10%;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero-badge{
+display:inline-block;
+padding:10px 18px;
+border:1px solid rgba(255,255,255,0.15);
+background:rgba(255,255,255,0.05);
+border-radius:50px;
+margin-bottom:25px;
+font-size:.9rem;
+}
+
+.hero h1{
+font-size:4rem;
+line-height:1.1;
+margin-bottom:25px;
+}
+
+.hero h1 span{
+color:#00ff9d;
+}
+
+.hero p{
+font-size:1.1rem;
+line-height:1.8;
+color:#d0d0d0;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn-primary{
+background:#00ff9d;
+color:#000;
+}
+
+.btn-primary:hover{
+transform:translateY(-4px);
+}
+
+.btn-secondary{
+border:1px solid rgba(255,255,255,0.2);
+color:white;
+}
+
+.btn-secondary:hover{
+background:rgba(255,255,255,0.08);
+}
+
+.floating{
+position:absolute;
+width:100px;
+height:100px;
+border-radius:50%;
+background:rgba(255,255,255,0.05);
+animation:float 6s infinite ease-in-out;
+}
+
+.f1{
+top:20%;
+left:10%;
+}
+
+.f2{
+right:10%;
+bottom:20%;
+animation-delay:2s;
+}
+
+@keyframes float{
+50%{
+transform:translateY(-25px);
+}
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+
+</style></head><body><nav>
+<div class="logo">InAmigos Foundation</div><div class="nav-links">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Programs</a>
+<a href="#">Donate</a>
+<a href="#">Contact</a>
+</div>
+</nav><div class="floating f1"></div>
+<div class="floating f2"></div><section class="hero"><div class="hero-content"><div class="hero-badge">
+🌍 Together We Create Impact
+</div><h1>
+Empowering Lives Through
+<span>Education, Healthcare</span>
+and Community Support
+</h1><p>
+At InAmigos Foundation, we believe that every small effort
+creates a ripple of positive change. Join us in building
+stronger communities and transforming lives across India.
+</p><div class="hero-buttons"><a href="#" class="btn btn-primary">
+Donate Now
+</a><a href="#" class="btn btn-secondary">
+Become Volunteer
+</a></div></div></section>
+
+<!-- ABOUT SECTION --><section class="about" id="about"><div class="section-heading">
+<h2>About InAmigos Foundation</h2>
+<p>
+Creating sustainable impact through compassion,
+innovation and community-driven initiatives.
+</p>
+</div><div class="about-grid"><div class="about-card">
+<h3>🎓 Education</h3>
+<p>
+Providing quality learning opportunities,
+digital literacy programs and educational
+support to underserved communities.
+</p>
+</div><div class="about-card">
+<h3>🏥 Healthcare</h3>
+<p>
+Organizing health awareness campaigns,
+medical support initiatives and wellness
+programs for families in need.
+</p>
+</div><div class="about-card">
+<h3>🌱 Environment</h3>
+<p>
+Promoting sustainability through plantation
+drives, clean-up campaigns and environmental
+education programs.
+</p>
+
+</div>
+</div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section class="projects">
+
+<div class="section-heading">
+<h2>Our Impactful Projects</h2>
+
+<p>
+At InAmigos Foundation, our initiatives focus on creating meaningful social impact through education, community service, women empowerment, environmental sustainability, animal welfare, and youth development.
+</p>
+
+</div>
+
+<div class="projects-grid">
+
+<div class="project-card">
+<h3>🍚 Seva</h3>
+<p>Helping those in need by providing food, clothes, and essential resources to support vulnerable communities.</p>
+</div>
+
+<div class="project-card">
+<h3>📚 Bachpanshala</h3>
+<p>Providing education, learning opportunities, and care to underprivileged children for a brighter future.</p>
+</div>
+
+<div class="project-card">
+<h3>🐾 Jeev</h3>
+<p>Supporting, protecting, and rescuing animals while promoting compassion for all living beings.</p>
+</div>
+
+<div class="project-card">
+<h3>🎓 Udaan</h3>
+<p>Empowering women through skill development, education, and career opportunities for a better tomorrow.</p>
+</div>
+
+<div class="project-card">
+<h3>🌱 Prakriti</h3>
+<p>Protecting nature through tree plantation drives, cleanliness campaigns, and environmental awareness programs.</p>
+</div>
+
+<div class="project-card">
+<h3>🚀 Vikas</h3>
+<p>Helping students and youth grow through internships, practical experience, mentorship, and skill-building initiatives.</p>
+</div>
+
+</div>
+
+<div class="project-achievement">
+
+<h3>🌟 Our Goal</h3>
+
+<p>Uniting Minds for A Change.</p>
+
+<br>
+
+<h3>🏆 Our Achievement</h3>
+
+<p>More than <strong>250+ interns</strong> have permanently joined the InAmigos Foundation family, creating meaningful impact across various initiatives.</p>
+
+</div>
+
+</section>
+</div></div></section><!-- IMPACT SECTION --><section class="impact"><div class="section-heading">
+<h2>Our Impact</h2>
+<p>
+Numbers that reflect lives transformed and
+communities empowered.
+</p>
+</div><div class="impact-grid"><div class="impact-card">
+<h1 class="counter" data-target="10000">0</h1>
+<p>Lives Impacted</p>
+</div><div class="impact-card">
+<h1 class="counter" data-target="500">0</h1>
+<p>Volunteers</p>
+</div><div class="impact-card">
+<h1 class="counter" data-target="150">0</h1>
+<p>Projects Completed</p>
+</div><div class="impact-card">
+<h1 class="counter" data-target="25">0</h1>
+<p>States Reached</p>
+</div></div></section><style>
+
+.about{
+padding:100px 8%;
+}
+
+.section-heading{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-heading h2{
+font-size:2.5rem;
+margin-bottom:15px;
+}
+
+.section-heading p{
+color:#bdbdbd;
+max-width:700px;
+margin:auto;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.about-card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+padding:35px;
+border-radius:25px;
+border:1px solid rgba(255,255,255,0.08);
+transition:.4s;
+}
+
+.about-card:hover{
+transform:translateY(-10px);
+border-color:#00ff9d;
+}
+
+.about-card h3{
+margin-bottom:15px;
+color:#00ff9d;
+}
+
+.about-card p{
+line-height:1.8;
+color:#d0d0d0;
+}
+
+.impact{
+padding:100px 8%;
+}
+
+.impact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.impact-card{
+text-align:center;
+padding:40px;
+border-radius:25px;
+background:linear-gradient(
+135deg,
+rgba(0,255,157,.15),
+rgba(0,195,255,.15)
+);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.impact-card h1{
+font-size:3rem;
+color:#00ff9d;
+}
+
+.impact-card p{
+margin-top:10px;
+color:#d0d0d0;
+}
+
+</style><script>
+
+const counters=document.querySelectorAll('.counter');
+
+counters.forEach(counter=>{
+
+const updateCounter=()=>{
+
+const target=+counter.getAttribute('data-target');
+const count=+counter.innerText;
+
+const increment=target/100;
+
+if(count<target){
+
+counter.innerText=Math.ceil(count+increment);
+
+setTimeout(updateCounter,20);
+
+}else{
+
+counter.innerText=target+"+";
+
+}
+
+};
+
+updateCounter();
+
+});
+
+</script>
+
+<!-- DONATION SECTION --><section class="donation" id="donate"><div class="section-heading">
+<h2>Support Our Mission</h2>
+<p>
+Every contribution helps us create meaningful change.
+Your support empowers education, healthcare and community development.
+</p>
+</div><div class="donation-container"><div class="donation-info"><h3>Make a Difference Today ❤️</h3><p>
+Your donation directly supports our initiatives and helps us
+reach more communities across India.
+</p><div class="donation-points">
+<div>✓ Transparent Impact</div>
+<div>✓ Verified NGO Activities</div>
+<div>✓ Community Driven Programs</div>
+<div>✓ Volunteer Support Network</div>
+</div></div><div class="qr-card"><img src="donation-qr.jpg" alt="Donation QR"><h3>Scan & Donate</h3><p>UPI: inamigosfoundation@icici</p></div></div></section><!-- TESTIMONIALS --><section class="testimonials"><div class="section-heading">
+<h2>Voices of Impact</h2>
+</div><div class="testimonial-grid"><div class="testimonial-card">
+<p>
+"Volunteering with InAmigos Foundation gave me
+an opportunity to create real impact."
+</p>
+<h4>- Volunteer</h4>
+</div><div class="testimonial-card">
+<p>
+"The educational initiatives have helped many
+students gain confidence and opportunities."
+</p>
+<h4>- Community Member</h4>
+</div><div class="testimonial-card">
+<p>
+"A truly inspiring organization dedicated to
+positive social change."
+</p>
+<h4>- Supporter</h4>
+</div></div></section><!-- VOLUNTEER FORM --><section class="volunteer"><div class="section-heading">
+<h2>Become A Volunteer</h2>
+<p>
+Join our mission and help transform lives.
+</p>
+</div><form class="volunteer-form"><input type="text" placeholder="Full Name" required><input type="email" placeholder="Email Address" required><input type="text" placeholder="City"><textarea rows="5"
+placeholder="Why do you want to volunteer?">
+</textarea><button type="submit">
+Join Our Team
+</button></form></section><!-- FOOTER --><footer><h2>InAmigos Foundation</h2><p>
+Together We Create Impact.
+</p><div class="footer-links">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Programs</a>
+<a href="#">Donate</a>
+<a href="#">Contact</a>
+</div><p class="copyright">
+© 2026 InAmigos Foundation. All Rights Reserved.
+</p></footer><style>
+
+.donation{
+padding:100px 8%;
+}
+
+.donation-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.donation-info{
+background:rgba(255,255,255,.05);
+padding:40px;
+border-radius:25px;
+}
+
+.donation-info h3{
+color:#00ff9d;
+margin-bottom:20px;
+}
+
+.donation-info p{
+line-height:1.8;
+color:#d0d0d0;
+}
+
+.donation-points{
+margin-top:25px;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.qr-card{
+text-align:center;
+background:rgba(255,255,255,.05);
+padding:40px;
+border-radius:25px;
+}
+
+.qr-card img{
+width:250px;
+max-width:100%;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.testimonials{
+padding:100px 8%;
+}
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.testimonial-card{
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:20px;
+}
+
+.testimonial-card p{
+line-height:1.8;
+margin-bottom:15px;
+}
+
+.volunteer{
+padding:100px 8%;
+}
+
+.volunteer-form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.volunteer-form input,
+.volunteer-form textarea{
+padding:16px;
+border:none;
+outline:none;
+border-radius:15px;
+background:rgba(255,255,255,.08);
+color:white;
+}
+
+.volunteer-form button{
+padding:18px;
+border:none;
+border-radius:50px;
+background:#00ff9d;
+font-weight:700;
+cursor:pointer;
+}
+
+footer{
+padding:60px 8%;
+text-align:center;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-links{
+margin:25px 0;
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.footer-links a{
+color:white;
+text-decoration:none;
+}
+
+.copyright{
+margin-top:20px;
+color:#999;
+}
+
+@media(max-width:768px){
+
+.donation-container{
+grid-template-columns:1fr;
+}
+
+}
+
+</style> 
+
+<!-- SOCIAL MEDIA SECTION --><section class="social-connect"><div class="section-heading"><h2>Stay Connected With Us 🌟</h2><p>
+Follow our official social media channels to stay updated
+with exciting career opportunities, volunteering programs,
+community initiatives and foundation activities.
+</p></div><div class="social-grid"><a href="https://www.linkedin.com/company/inamigos-foundation" target="_blank" class="social-card">
+💼 LinkedIn
+</a><a href="https://instagram.com/inamigos" target="_blank" class="social-card">
+📸 Instagram
+</a><a href="https://www.facebook.com/share/1CeyCkB3uL/" target="_blank" class="social-card">
+📘 Facebook
+</a><a href="https://twitter.com/InamigosF" target="_blank" class="social-card">
+🐦 Twitter / X
+</a><a href="https://youtube.com/@inamigosfoundation" target="_blank" class="social-card">
+▶️ YouTube
+</a></div></section><!-- FUNDRAISING IMPORTANCE --><section class="fundraising-section"><div class="section-heading"><h2>Why Fundraising Matters 🤔</h2><p>
+Fundraising is much more than collecting donations.
+It builds stronger communities and creates sustainable impact.
+</p></div><div class="fundraising-grid"><div class="fund-card">📌 Alleviate the world's greatest needs</div><div class="fund-card">📌 Raise awareness for important causes</div><div class="fund-card">📌 Create a sense of unity and purpose</div><div class="fund-card">📌 Learn planning and prioritization skills</div><div class="fund-card">📌 Encourage continuous growth and progress</div><div class="fund-card">📌 Help shape the future of charities</div><div class="fund-card">📌 Support long-term sustainability</div><div class="fund-card">📌 Create positive change in communities</div></div><div class="fundraising-quote">✨ Fundraising is so much more than raising funds. When done
+right, it transforms an organization into a sustainable,
+high-impact force for community good.
+
+</div></section><style>
+
+.social-connect{
+padding:100px 8%;
+}
+
+.social-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.social-card{
+text-decoration:none;
+color:white;
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:20px;
+text-align:center;
+font-weight:600;
+transition:.4s;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.social-card:hover{
+transform:translateY(-8px);
+border-color:#00ff9d;
+}
+
+.fundraising-section{
+padding:100px 8%;
+}
+
+.fundraising-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.fund-card{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:20px;
+line-height:1.7;
+}
+
+.fundraising-quote{
+margin-top:50px;
+padding:35px;
+border-radius:25px;
+background:linear-gradient(
+135deg,
+rgba(0,255,157,.12),
+rgba(0,195,255,.12)
+);
+text-align:center;
+font-size:1.1rem;
+line-height:1.8;
+font-weight:500;
+}
+.projects{
+padding:100px 8%;
+}
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:50px;
+}
+
+.project-card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(20px);
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+transition:.4s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+border-color:#00ff9d;
+}
+
+.project-card h3{
+color:#00ff9d;
+margin-bottom:15px;
+}
+
+.project-card p{
+line-height:1.8;
+color:#d0d0d0;
+}
+
+.project-achievement{
+margin-top:60px;
+text-align:center;
+padding:35px;
+border-radius:20px;
+background:linear-gradient(135deg,rgba(0,255,157,.12),rgba(0,195,255,.12));
+}
+</style>
